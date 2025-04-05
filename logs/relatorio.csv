@@ -1,0 +1,7 @@
+$file = fopen('relatorio.csv', 'w');
+
+fputcsv($file ['Nome, 'Email']);
+
+fputcsv($file, ['Felipe Pereira Souza', 'felipe@gmail.com']);
+
+fclose($file);

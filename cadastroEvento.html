@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Eventos</title>
+    <link rel="stylesheet" href="css/style2.css"> <!-- Link para o CSS externo -->
+</head>
+
+<body>
+    <div class="form-container">
+    <h2>Cadastrar novo Evento</h2>
+    <form action="salvarEvento.php" method ="POST">
+    <div class="form-group">
+        <label for="nome">Nome do Evento:</label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div class="form-group">
+        <label for="data_finalizacao">Data de Finalização:</label>
+        <input type="date" id="data_finalizacao" name="data_finalizacao" required>
+    </div>
+        
+<div class="form-group">
+    <label for="horario">Horário do Evento:</label>
+    <input type="time" id="horario" name="horario" required>
+</div>
+
+<div class= "form-group">
+    <label for="local">Local do Evento:</label>
+    <input type="text" id="local" name="local" required>
+</div>
+
+<div class ="form-group">
+    <label for="tipo_evento">Tipo de Evento</label>
+    <select name="tipo_evento" id="tipo_evento" required>
+        <option value="infantil">Infantil </option>
+        <option value="adulto">Adulto </option>
+        <option value="empresarial">Empresarial </option>
+    </select>
+</div>
+
+<div class="form-group">
+                <button type="submit">Salvar Evento</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            let nome = document.getElementById('nome').value.trim();
+            let data_finalizacao = document.getElementById('data_finalizacao').value;
+            let horario = document.getElementById('horario').value;
+            let local = document.getElementById('local').value.trim();
+            
+            
+            if (nome === "" || data_finalizacao === "" || horario === "" || local === "") {
+                alert("Por favor, preencha todos os campos.");
+            }
+        });
+    </script>
+
+<body>
+</html>
+

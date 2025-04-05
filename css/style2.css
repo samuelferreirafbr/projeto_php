@@ -1,0 +1,57 @@
+/* style.css */
+/* Estilo global do corpo */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f90000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos inputs, selects e textareas */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão */
+.form-group button {
+    background-color: #ff3300;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo do botão quando o mouse passa por cima */
+.form-group button:hover {
+    background-color: #ff0000;
+}
