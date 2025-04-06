@@ -1,0 +1,1 @@
+Este foi um projeto realizado durante o segundo semestre (07/2024 - 12/2024) na faculdade de ADS. Se tratando, então, de um projeto de solicitação/cadastro de eventos. O primeiro sistema oficial que eu criei.
